@@ -34,8 +34,12 @@ Enter the Laravel container:
 `docker exec -it laravel_api bash`
 
     Then run:
-`composer install` and
-`php artisan migrate`
+
+    `composer install`
+
+    `php artisan key:generate`
+
+    `php artisan migrate`
 
 
 5. Generate API Token (Test User): `php artisan make:test-user`
