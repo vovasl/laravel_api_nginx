@@ -42,6 +42,10 @@ class VirtualHostRepository extends BaseRepository implements VirtualHostReposit
         }
     }
 
+    /**
+     * @param string $domain
+     * @return JsonResponse
+     */
     public function deleteVirtualHost(string $domain): JsonResponse
     {
         try {
