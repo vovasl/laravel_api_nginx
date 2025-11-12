@@ -22,7 +22,7 @@ You can easily create, delete, or reload Nginx configurations for custom domains
    `cd laravel_api_nginx`
 
 
-2. Configure environment variables. Rename the file:api/.env.example → api/.env
+2. Configure environment variables. Rename the file: api/.env.example → api/.env
 
 
 3. Start Docker containers
@@ -34,20 +34,23 @@ Enter the Laravel container:
 `docker exec -it laravel_api bash`
 
     Then run:
-`composer install`
+`composer install` and
 `php artisan migrate`
 
 
-5. Generate API Token (Test User) `php artisan make:test-user`
+5. Generate API Token (Test User): `php artisan make:test-user`
 
     This will create a test user and output an API token. Use that token to authenticate your API requests via the header: `Authorization: Bearer <your-token>`
 
+---
 
 ## 🌐 Application URLs
 
 API: http://localhost:9000/
 
 Client: http://localhost:8000/
+
+---
 
 ## 📡 API Endpoints
 | Category                | Method   | Endpoint                      | Body Example                 | Description                     |
